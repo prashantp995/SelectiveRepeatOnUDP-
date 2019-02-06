@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: logback-core-1.1.7.jar logback-classic-1.1.7.jar json-2018
+ 0813.jar slf4j-api-1.7.21.jar json-simple-1.1.1.jar commons-lang3-3.8
+ .jar jopt-simple-5.0.2.jar
+Main-Class: ca.concordia.utilities.Utilities
+

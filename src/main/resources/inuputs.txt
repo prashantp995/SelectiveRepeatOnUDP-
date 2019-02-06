@@ -1,0 +1,28 @@
+java -jar netsample.jar help
+java -jar netsample.jar help get
+java -jar netsample.jar help post
+
+java -jar netsample.jar get "http://httpbin.org/get?course=networking&assignment=1"
+java -jar netsample.jar get -v "http://httpbin.org/get?course=networking&assignment=1"
+java -jar netsample.jar get -h Content-Type:application/json "http://httpbin.org/get?course=networking&assignment=1"
+java -jar netsample.jar get -v -h Content-Type:application/json "http://httpbin.org/get?course=networking&assignment=1"
+
+java -jar netsample.jar post "http://httpbin.org/post"
+java -jar netsample.jar post -v "http://httpbin.org/post"
+java -jar netsample.jar post -h Content-Type:application/json "http://httpbin.org/post"
+java -jar netsample.jar post -h Content-Type:application/json -h User-Agent:Mozilla "http://httpbin.org/post"
+java -jar netsample.jar post -v -h Content-Type:application/json "http://httpbin.org/post"
+java -jar netsample.jar post -f "C:\Users\prash\OneDrive\Desktop\test.json" "http://httpbin.org/post"
+java -jar netsample.jar post -v -f "C:\Users\prash\OneDrive\Desktop\test.json" "http://httpbin.org/post"
+java -jar netsample.jar post -h Content-Type:application/json -f "C:\Users\prash\OneDrive\Desktop\test.json" "http://httpbin.org/post"
+java -jar netsample.jar post -v -h Content-Type:application/json -f "C:\Users\prash\OneDrive\Desktop\test.json" "http://httpbin.org/post"
+java -jar netsample.jar post  -d \'{"Assignment": 1}\' "http://httpbin.org/post"
+  java -jar netsample.jar post -v -d \'{"Assignment": 1,"test":1}\' "http://httpbin.org/post"
+java -jar netsample.jar post -h Content-Type:application/json -d \'{"Assignment": 1,"test":1}\' "http://httpbin.org/post"
+java -jar netsample.jar post -v -h Content-Type:application/json -d \'{"Assignment": 1,"test":1}\' "http://httpbin.org/post"
+
+Bonus Marks test cases
+java -jar netsample.jar post -v "http://httpbin.org/post" -o output.txt
+java -jar netsample.jar get  "http://httpbin.org/redirect/6"
+java -jar netsample.jar get  "http://httpbin.org/redirect/5"
+for status code 302

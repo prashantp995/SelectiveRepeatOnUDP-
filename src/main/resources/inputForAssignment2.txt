@@ -1,0 +1,18 @@
+1) Server
+java -jar Server.jar -p 8080 -d "C:\\serverFiles"
+
+
+2) Client
+2a) java -jar netsample.jar get -v "http://localhost:8080/test.json"
+2b) java -jar netsample.jar get -v "http://localhost:8080/"
+
+2c) java -jar netsample.jar post -d  \'{"Assignment": 1}\' "http://localhost:8080/test1.json"
+
+
+
+Error Handling
+Content doesn't exist(File2 should exists and should have no content)
+2g) java -jar netsample.jar get  "http://localhost:8080/File2"
+
+File doesn't exist(File2 should exists and should have no content)
+2e)java -jar netsample.jar get  "http://localhost:8080/File2142"

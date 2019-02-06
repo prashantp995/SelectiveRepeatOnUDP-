@@ -1,0 +1,7 @@
+/bin/
+/.classpath
+/.project
+/.idea/
+/.metadata/
+/target/
+src/main/java/ca/concordia/utilities/test.java
